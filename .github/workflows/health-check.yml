@@ -1,8 +1,9 @@
 name: Health check every 15 minutes
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  workflow_dispatch:
+#   schedule:
+#     - cron: '*/15 * * * *'
 
 jobs:
   api-check:
